@@ -4,6 +4,7 @@ import '../bmi_calculator_controller.dart';
 import 'input_picker_widget.dart';
 
 class InputsWidget extends StatelessWidget {
+  const InputsWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +12,7 @@ class InputsWidget extends StatelessWidget {
     BMICalculatorController controller = Get.find();
 
     return Container(
-     // decoration: BoxDecoration(border: Border.all(color:Colors.green, width: 2)),
+      decoration: BoxDecoration(border: Border.all(color:Colors.green, width: 2)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

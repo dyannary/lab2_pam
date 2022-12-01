@@ -13,7 +13,6 @@ class ButtonsWidget extends StatelessWidget {
     double buttonHeight = 45;
 
     return Container(
-    //  decoration: BoxDecoration(border: Border.all(color:Colors.green, width: 2)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

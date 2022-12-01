@@ -16,8 +16,6 @@ class BMICalculatorPage extends StatefulWidget {
 
 class _BMICalculatorPageState extends State<BMICalculatorPage> {
 
-  static const String _title = 'BMI Calculator';
-
   @override
   void initState() {
 
@@ -28,9 +26,6 @@ class _BMICalculatorPageState extends State<BMICalculatorPage> {
 
   @override
   Widget build(BuildContext context) {
-
-    BMICalculatorController controller = Get.find();
-
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark().copyWith(
@@ -40,7 +35,6 @@ class _BMICalculatorPageState extends State<BMICalculatorPage> {
         home: Scaffold(
           body: Container(
             margin: const EdgeInsets.only(top: 25),
-            //decoration: BoxDecoration(border: Border.all(color:Colors.red, width: 2)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

@@ -17,7 +17,7 @@ class _ResultWidgetState extends State<ResultWidget> {
 
     return Container(
       height: 50,
-     // decoration: BoxDecoration(border: Border.all(color:Colors.green, width: 2)),
+      decoration: BoxDecoration(border: Border.all(color:Colors.green, width: 2)),
       child: Obx(() {
         if (controller.bmi.value == 0) {
           return Container();
