@@ -11,9 +11,7 @@ class InputsWidget extends StatelessWidget {
 
     BMICalculatorController controller = Get.find();
 
-    return Container(
-      decoration: BoxDecoration(border: Border.all(color:Colors.green, width: 2)),
-      child: Row(
+    return Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           InputPickerWidget(nameWidget: "Weight", input: controller.weight),
@@ -22,7 +20,6 @@ class InputsWidget extends StatelessWidget {
 
           InputPickerWidget(nameWidget: "Height", input: controller.height),
         ],
-      ),
-    );
+      );
   }
 }

@@ -15,9 +15,8 @@ class _ResultWidgetState extends State<ResultWidget> {
 
     BMICalculatorController controller = Get.find();
 
-    return Container(
+    return SizedBox(
       height: 50,
-      decoration: BoxDecoration(border: Border.all(color:Colors.green, width: 2)),
       child: Obx(() {
         if (controller.bmi.value == 0) {
           return Container();
